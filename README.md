@@ -1,4 +1,4 @@
-# Sampling to Capture Single-Cell Heterogeneity#
+# Sampling to Capture Single-Cell Heterogeneity
 
 ## Paper: 
 This is the source code associated with the paper "Sampling to Capture Single-Cell Heterogeneity" by Rajaram et al., slated to appear in Nature Methods.The paper provides a rational strategy to determine how many samples are required to capture the heterogeneity of a specimen.

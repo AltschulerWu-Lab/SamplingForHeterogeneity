@@ -4,6 +4,7 @@
 % This script assumes pre-calculated KS prime scores for the various
 % sample marker combinations, that are loaded by the LoadKSPResults
 % function below.
+addpath(genpath('Functions/')); % This contains all the functions used
 %% Load Data and Annotations
 
 params=GetParams('LiverCancer');
@@ -125,7 +126,7 @@ end
 figure;
 scatter(x,y,s,'k','filled');
 hold on;
-plot(lim,lim,'--k');
+plot(lim,lim,'--k','LineWidth',2);
 hold off;
 set(gca,'XLim',lim,'YLim',lim);
 set(gca,'XTick',[1,5,10],'YTick',[1,5,10],'XTickLabel',[],'YTickLabel',[]);
@@ -169,7 +170,7 @@ figure;
 scatter(x,y,s,'k','filled');
 
 hold on;
-plot(lim,lim,'--k'); % Diagonal line
+plot(lim,lim,'--k','LineWidth',2); % Diagonal line
 hold off;
 
 set(gca,'XLim',lim,'YLim',lim);
